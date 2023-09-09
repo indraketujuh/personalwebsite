@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/css/global.css" rel="stylesheet" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-between h-screen">
+    <header class="flex justify-between p-8">
+      <div class="text-2xl font-bold tracking-tight bg-gradient-to-r from-rose-800 to-purple-800 bg-clip-text text-transparent">indrapermana</div>
+      <div class="flex gap-4 cardHeader text-center align-middle p-2" >
+        <div class="card w-20 p-1">About</div>
+        <div class=" card w-20 p-1">Craft</div>
+        <div class="card w-20 p-1">Media</div>
+      </div>
+      <div>Contact</div>
+    </header>
+
+    <main class="max-w-3xl m-auto grid grid-cols-3 gap-8">
+      <div class="card col-span-2 relative">
+        <div class="absolute top-4 right-4 flex gap-2 items-center bg-emerald-100 border-[1px] w-fit rounded-full px-3 py-1 text-xs">
+          <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+          <div>Open for collaboration</div>
+        </div>
+        <img src="public/ipman.jpg" class="w-16 h-16 rounded-full" />
+        <div class="">Indra Permana</div>
+        <div class="text-xs">Architect @Birka Studio</div>
+        <div class="flex gap-1 items-baseline">
+        <h1 id="heading"></h1>
+        </div>
+      </div>
+
+      <!-- twitter card -->
+      <div class="card flex justify-center items-center bg-cyan-200">
+        <img src="public/twitter.svg" class="w-[80px] h-[80px]"/>
+      </div>
+
+      <!-- portofolio -->
+      <div class="card flex justify-center items-center relative bg-yellow-300">
+        <div class="absolute bottom-4 left-3 bg-white p-3 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>          
+        </div>
+        <div class="text-xs font-medium">Birka Studio Project</div>
+      </div>
+
+      <!-- form -->
+      <div class="card col-span-2">
+        <h3>Collaboration?</h3>
+        <p>I think about architecture all the time. That's the problem. But I've always been like that. I dream it sometimes. If You need a challenge join with us.</p>
+        <input id="form" />
+      </div>
+    </main>
+
+    <footer class="text-center p-2">
+      <p>Your Responsiveness Design.</p>
+    </footer>
+  </div>
+    <script src="src/js/main.js" type="module"></script>
+  </body>
+</html>
